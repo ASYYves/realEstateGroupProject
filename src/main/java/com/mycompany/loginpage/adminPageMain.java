@@ -10,7 +10,7 @@ package com.mycompany.loginpage;
  */
 public class adminPageMain {
     public static void main(String[] args) {
-        adminPage fr = new adminPage();
-        fr.setVisible(true);
+       new adminPage();
+       
     }
 }
