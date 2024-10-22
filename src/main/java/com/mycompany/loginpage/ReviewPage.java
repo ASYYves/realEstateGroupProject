@@ -1,0 +1,77 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.loginpage;
+
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.HeadlessException;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+
+/**
+ *
+ * @author johnl
+ */
+public class ReviewPage extends JFrame {
+    
+private JLabel lblNameId, lblID, lblPrice, lblLocation;
+private JTextArea txaInfo;
+private JButton btnBack, btnBuy;
+private JPanel pnPic;
+    public ReviewPage(){
+        
+        setTitle("Details");
+        setSize(800,700);
+        setLayout(null);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        lblNameId = new JLabel("Name: ");
+        lblNameId.setBounds(50, 50, 350, 50);
+        lblNameId.setFont(new Font("Arial" ,Font.PLAIN, 17));
+        add(lblNameId);
+        
+        lblID = new JLabel("Property ID: ");
+        lblID.setBounds(50, 110, 350, 50);
+        lblID.setFont(new Font("Arial" ,Font.PLAIN, 17));
+        add(lblID);
+        
+        lblLocation = new JLabel("Location: " );
+        lblLocation.setBounds(50, 170, 350, 50);
+        lblLocation.setFont(new Font("Arial" ,Font.PLAIN, 17));
+        add(lblLocation);
+        
+        lblPrice = new JLabel("Price: ");
+        lblPrice.setBounds(50, 230, 350, 50);
+        lblPrice.setFont(new Font("Arial" ,Font.PLAIN, 17));
+        add(lblPrice);
+        
+        txaInfo = new JTextArea();
+        txaInfo.setBounds(50, 290, 680, 290);
+        txaInfo.setFont(new Font("Arial" ,Font.PLAIN, 17));
+        txaInfo.setEditable(false);
+        add(txaInfo);
+        
+        btnBack = new JButton("Back");
+        btnBack.setBounds(550, 610, 75, 30);
+        add(btnBack);
+        
+        btnBuy = new JButton("Buy");
+        btnBuy.setBounds(650, 610, 75, 30);
+        add(btnBuy);
+        
+        pnPic = new JPanel();
+        pnPic.setBounds(400, 50, 330, 230);
+        pnPic.setBackground(Color.red);
+        add(pnPic);
+        
+        setVisible(true);
+    }
+    
+}
+
