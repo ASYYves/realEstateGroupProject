@@ -17,7 +17,7 @@ import javax.swing.JPanel;
  *
  * @author johnl
  */
-public class welcomePage extends JFrame implements  ActionListener{
+public class welcomePage extends JFrame implements ActionListener{
     private JLabel lblWelcome,lblRealEstate, lblTagLine1,lblTagLine2, lblTo;
     private JButton btnLogin,btnSignUp;
     private JPanel jpLogo;
@@ -42,7 +42,7 @@ public class welcomePage extends JFrame implements  ActionListener{
 //        lblTo.setFont(new Font("Arial", Font.PLAIN, 20));
 //        add(lblTo);
         
-        lblRealEstate = new JLabel("Quahog Springfield Real Estate");
+        lblRealEstate = new JLabel("Quahog Springfield Real Estates");
         lblRealEstate.setBounds(0,90,380,50);
         lblRealEstate.setHorizontalAlignment(JLabel.CENTER);
         lblRealEstate.setFont(new Font("Arial", Font.PLAIN, 25));
