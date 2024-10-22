@@ -78,15 +78,23 @@ public class welcomePage extends JFrame implements ActionListener{
         add(btnSignUp);
         
         btnLogin.addActionListener(this);
+        btnSignUp.addActionListener(this);
         
         
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(e.getSource()==btnLogin){
+        if (e.getSource()==btnLogin){
             loginPage loginPage = new loginPage();
             loginPage.setVisible(true);
+            dispose();
+            
+        }
+        
+        else if (e.getSource()==btnSignUp){
+            SignUp signup = new SignUp();
+            signup.setVisible(true);
             dispose();
             
         }
