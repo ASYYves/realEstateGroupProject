@@ -7,6 +7,8 @@ package com.mycompany.loginpage;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -16,7 +18,8 @@ import javax.swing.JPanel;
  *
  * @author user
  */
-public class receiptPage extends JFrame {
+public class receiptPage extends JFrame implements ActionListener{
+    
     
     private JLabel lblQuahogSpringField1, lblQuahogSpringField2, lblName, lblUserName, lblDate, lblTime, lblProductName, lblProductID, lblPrice, lblTransactionID, lblPurchasedEstate, lblOfficial, lblThankYou;
     private JPanel jpLogo;
@@ -115,6 +118,7 @@ public class receiptPage extends JFrame {
         lblTransactionID.setFont(new Font("Arial", Font.PLAIN, 10));
         add(lblTransactionID);
         
+        
         lblOfficial = new JLabel("THIS IS AN OFFICIAL RECEIPT");
         lblOfficial.setBounds(20, 480, 360, 20);
         lblOfficial.setHorizontalAlignment(JLabel.CENTER);
@@ -137,7 +141,27 @@ public class receiptPage extends JFrame {
         add(btnBackToHome);
         
         
+        btnBackToHome.addActionListener(this);
+        
+        
         setVisible(true);
+        
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        
+        if (e.getSource() == btnBackToHome) {
+            
+            
+            //temperary to welcomPage
+            
+            welcomePage welcome = new welcomePage();
+            welcome.setVisible(true);
+            dispose();
+            
+            
+        }
     }
     
 }

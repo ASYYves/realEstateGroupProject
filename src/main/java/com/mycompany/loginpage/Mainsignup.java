@@ -15,9 +15,14 @@ public class Mainsignup {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
         // TODO code application logic here
+        
         SignUp sgup= new SignUp();
+        
         sgup.setVisible(true);
+        
+        
     }
     
 }

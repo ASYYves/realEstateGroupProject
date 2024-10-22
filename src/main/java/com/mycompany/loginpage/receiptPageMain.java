@@ -10,8 +10,11 @@ package com.mycompany.loginpage;
  */
 public class receiptPageMain {
     
+    
     public static void main(String[] args) {
         
+        
         new receiptPage();
+        
     }
 }

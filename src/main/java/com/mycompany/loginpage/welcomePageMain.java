@@ -10,8 +10,13 @@ package com.mycompany.loginpage;
  * @author johnl
  */
 public class welcomePageMain {
+    
     public static void main(String[] args) {
+        
+        
         welcomePage frame = new welcomePage();
         frame.setVisible(true);
+        
+        
     }
 }
